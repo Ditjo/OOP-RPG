@@ -134,6 +134,9 @@ namespace RPG
 
             Party.Add(CharacterObj);
 
+            Console.WriteLine("Your Character has joined the party.");
+            Console.ReadKey();
+
             return Party;
         }
     }

@@ -52,7 +52,7 @@ namespace RPG
                     default:
                         Console.Clear();
                         Console.WriteLine("Not Valid Input");
-                        Console.WriteLine("Press any key yo return");
+                        Console.WriteLine("Press any key to return");
                         Console.ReadKey();
                         break;
                 }
