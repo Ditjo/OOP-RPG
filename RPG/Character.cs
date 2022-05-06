@@ -10,16 +10,12 @@ namespace RPG
     {
         Fighter, Mage, Cleric, Bard, Rouge, Paladin, Barbarian, Archer, Druid
     }
-    public class CharacterCreator
+    public class CharacterCreator : EntityBasicStats
     {
         public string Name { get; set; }
         public int Level { get; set; }
         public int Xp { get; set; }
-        //Skills
-        public int Strength { get; set; }
-        public int Agility { get; set; }
-        public int Magic { get; set; }
-        public int Smarts { get; set; }
+
         //Type
         public CharacterType Type { get; set; }
     }
@@ -134,7 +130,7 @@ namespace RPG
 
             Party.Add(CharacterObj);
 
-            Console.WriteLine("Your Character has joined the party.");
+            Console.WriteLine($"{CharacterObj.Name} has joined the party.");
             Console.ReadKey();
 
             return Party;
