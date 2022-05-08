@@ -10,6 +10,7 @@ namespace RPG
     {
         static internal void PartyMembers(List<CharacterCreator> Party)
         {
+            //Prints out the party members including there Class, Level, XP & Skills
             foreach (var item in Party)
             {
                 Console.WriteLine("--------------------");

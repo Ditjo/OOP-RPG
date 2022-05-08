@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPG
 {
+    //Basic stats. possible future expansion 
     public abstract class EntityBasicStats
     {
         public int Strength { get; set; }

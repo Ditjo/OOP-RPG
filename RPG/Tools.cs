@@ -18,6 +18,9 @@ namespace RPG
                 input = Console.ReadLine();
                 if (string.IsNullOrEmpty(input))
                 {
+                    //used to tell you it's the wrong input &
+                    //delete that specific feedback after you have acknowledge it. 
+                    //ValueTuple can store 2 inputs from GetCursorPosition
                     ValueTuple<int, int> d = Console.GetCursorPosition();
                     Console.Write("Invalid Input");
                     Console.ReadKey();
@@ -28,12 +31,14 @@ namespace RPG
             } while (string.IsNullOrEmpty(input));
             return input;
         }
+        //D6 Dice
         static internal int DiceD6()
         {
             Random D6 = new Random();
             int i = D6.Next(1, 7);
             return i;
         }
+        //Roling 3 X D6 dice & adds the together
         static internal int RoleD6(int num)
         {
             int role = 0;
